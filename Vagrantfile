@@ -5,8 +5,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "debian11"
   config.vm.provision "shell", inline: <<-SHELL
-  config.vm.memory = 4096
-  config.vm.cpus = 4
 echo "Install deps"
 apt install -y gnupg gnupg2 gnupg1
 
